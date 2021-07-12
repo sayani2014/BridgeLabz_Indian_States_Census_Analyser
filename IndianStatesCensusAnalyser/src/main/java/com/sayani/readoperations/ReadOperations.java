@@ -1,6 +1,6 @@
 package com.sayani.readoperations;
 
-import com.sayani.exception.StateSensorAnalysisException;
+import com.sayani.exception.StateAnalysisException;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -25,10 +25,10 @@ public class ReadOperations {
      * @param filePathRead
      * @param fileNameUser
      * @return
-     * @throws StateSensorAnalysisException
+     * @throws StateAnalysisException
      */
 
-    public int readDataCount(String filePathRead, String fileNameUser) throws StateSensorAnalysisException {
+    public int readDataCount(String filePathRead, String fileNameUser) throws StateAnalysisException {
         AtomicBoolean firstLine = new AtomicBoolean(true);
         AtomicInteger count = new AtomicInteger();
 
@@ -42,11 +42,11 @@ public class ReadOperations {
             }
 
             if (!fileNameWithoutExtension.equals(fileNameUser)) {
-                throw new StateSensorAnalysisException("Please enter a proper file name!", StateSensorAnalysisException.Message.IMPROPER_FILE_NAME);
+                throw new StateAnalysisException("Please enter a proper file name!", StateAnalysisException.Message.IMPROPER_FILE_NAME);
             }
 
             if (!fileName.contains(".csv"))
-                throw new StateSensorAnalysisException("Please enter a proper file type!", StateSensorAnalysisException.Message.IMPROPER_FILE_TYPE);
+                throw new StateAnalysisException("Please enter a proper file type!", StateAnalysisException.Message.IMPROPER_FILE_TYPE);
 
             Files.lines(Paths.get(filePathRead)).forEach(lines -> {
                 if (lines.startsWith("State"))
@@ -84,7 +84,7 @@ public class ReadOperations {
                 flag = true;
             else {
                 flag = false;
-                throw new StateSensorAnalysisException("Please enter a correct delimiter!", StateSensorAnalysisException.Message.IMPROPER_DELIMITER);
+                throw new StateAnalysisException("Please enter a correct delimiter!", StateAnalysisException.Message.IMPROPER_DELIMITER);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -100,10 +100,10 @@ public class ReadOperations {
      * @param stringName
      * @return
      * @throws IOException
-     * @throws StateSensorAnalysisException
+     * @throws StateAnalysisException
      */
 
-    public boolean readHeader(String filePath, List<String> stringName) throws IOException, StateSensorAnalysisException {
+    public boolean readHeader(String filePath, List<String> stringName) throws IOException, StateAnalysisException {
         BufferedReader br = new BufferedReader(new FileReader(filePath));
 
         //Reading header
@@ -115,7 +115,7 @@ public class ReadOperations {
                 flag = true;
             else {
                 flag = false;
-                throw new StateSensorAnalysisException("Please enter the correct header!", StateSensorAnalysisException.Message.IMPROPER_HEADER);
+                throw new StateAnalysisException("Please enter the correct header!", StateAnalysisException.Message.IMPROPER_HEADER);
             }
         }
         return flag;

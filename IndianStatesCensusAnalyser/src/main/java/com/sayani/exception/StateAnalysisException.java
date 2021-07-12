@@ -1,13 +1,13 @@
 package com.sayani.exception;
 
-public class StateSensorAnalysisException extends Exception {
+public class StateAnalysisException extends Exception {
     Message messageValue;
 
     public enum Message {
         IMPROPER_FILE_NAME, IMPROPER_FILE_TYPE, IMPROPER_DELIMITER, IMPROPER_HEADER
     }
 
-    public StateSensorAnalysisException(String message, Message messageValue) {
+    public StateAnalysisException(String message, Message messageValue) {
         super(message);
         this.messageValue = messageValue;
     }

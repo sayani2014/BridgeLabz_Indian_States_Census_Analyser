@@ -1,7 +1,6 @@
 /**
- * Ability for the analyser to load the Indian States Census Information from a .csv file
- * Create a StateCensusAnalyser Class to load the State Census CSV Data
- * Use Iterator to load the data
+ * Ability for the analyser to load the Indian States Code Information from a csv file
+ * Create CSVStates Class to load the CSV Data
  *
  * @author : SAYANI KOLEY
  * @since : 12.07.2021
@@ -16,17 +15,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StateCensusAnalyser {
-
+public class CSVStates {
     public static void main(String[] args) throws StateAnalysisException, IOException {
-        String filePathRead = "src/main/java/com/sayani/readoperations/StateCensusData.csv";
-        String fileName = "StateCensusData";
+        String filePathRead = "src/main/java/com/sayani/readoperations/StateCode.csv";
+        String fileName = "StateCode";
         String delimiter =",";
         List<String> stringName = new ArrayList<>();
+        stringName.add("SrNo");
         stringName.add("State");
-        stringName.add("Population");
-        stringName.add("AreaInSqKm");
-        stringName.add("DensityPerSqKm");
+        stringName.add("Name");
+        stringName.add("TIN");
+        stringName.add("StateCode");
 
         ReadOperations readObj = new ReadOperations();
         int count = readObj.readDataCount(filePathRead, fileName);
