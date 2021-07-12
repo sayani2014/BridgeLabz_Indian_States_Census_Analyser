@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ea74988-e536-41c7-9d83-f8f7dc69b7d1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vCRhnQKom7FBPYZbB0KIEkR0C4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ea74988-e536-41c7-9d83-f8f7dc69b7d1" name="Default Changelist" comment="" />
+      <created>1626064205657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626064205657</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="758" y="166" key="FileChooserDialogImpl" timestamp="1626064548834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="758" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626064548834" />
+    <state x="418" y="22" key="new project wizard" timestamp="1626064551063">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1626064551063" />
+  </component>
+</project>
